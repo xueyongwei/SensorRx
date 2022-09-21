@@ -1,0 +1,6 @@
+module Pods_SensorRx {
+  umbrella header "Pods-SensorRx-umbrella.h"
+
+  export *
+  module * { export * }
+}

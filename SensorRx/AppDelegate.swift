@@ -6,14 +6,20 @@
 //
 
 import UIKit
+import SensorsAnalyticsSDK
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let config = SAConfigOptions.init(serverURL:"https://sensors-datasink.wsecar.com/sa?project=default", launchOptions: launchOptions);
+        config.enableLog = true
+        config.autoTrackEventType = SensorsAnalyticsAutoTrackEventType(rawValue: SensorsAnalyticsAutoTrackEventType.eventTypeAppStart.rawValue | SensorsAnalyticsAutoTrackEventType.eventTypeAppEnd.rawValue | SensorsAnalyticsAutoTrackEventType.eventTypeAppClick.rawValue)
+        
+        SensorsAnalyticsSDK.start(configOptions: config)
         return true
     }
 

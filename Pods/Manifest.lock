@@ -1,0 +1,51 @@
+PODS:
+  - RxBinding (0.5):
+    - RxCocoa (~> 6)
+    - RxSwift (~> 6)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SensorsAnalyticsSDK (4.4.4):
+    - SensorsAnalyticsSDK/Core (= 4.4.4)
+  - SensorsAnalyticsSDK/__Store (4.4.4)
+  - SensorsAnalyticsSDK/AutoTrack (4.4.4):
+    - SensorsAnalyticsSDK/Common
+  - SensorsAnalyticsSDK/Base (4.4.4):
+    - SensorsAnalyticsSDK/__Store
+  - SensorsAnalyticsSDK/Common (4.4.4):
+    - SensorsAnalyticsSDK/Extension
+  - SensorsAnalyticsSDK/Core (4.4.4):
+    - SensorsAnalyticsSDK/Common
+    - SensorsAnalyticsSDK/Visualized
+  - SensorsAnalyticsSDK/Extension (4.4.4):
+    - SensorsAnalyticsSDK/Base
+  - SensorsAnalyticsSDK/Visualized (4.4.4):
+    - SensorsAnalyticsSDK/AutoTrack
+
+DEPENDENCIES:
+  - RxBinding
+  - RxCocoa
+  - RxSwift
+  - SensorsAnalyticsSDK (= 4.4.4)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - RxBinding
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SensorsAnalyticsSDK
+
+SPEC CHECKSUMS:
+  RxBinding: e3c76d02d0ee3f1a306a0fb8e8ef6f2eda65a375
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SensorsAnalyticsSDK: 4277a63f9cd4797a9e311328fdedd3ad0d8b4576
+
+PODFILE CHECKSUM: 41bda4716660e38b813fc47113272f5fe53b3ab4
+
+COCOAPODS: 1.11.2

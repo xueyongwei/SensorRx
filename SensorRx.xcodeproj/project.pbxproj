@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BF0908BE32773554BDB5120 /* libPods-SensorRx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3BCCB51E4FA133D85F3000 /* libPods-SensorRx.a */; };
 		71DDD33D28DAFFAD00F60575 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DDD33C28DAFFAD00F60575 /* AppDelegate.swift */; };
 		71DDD33F28DAFFAD00F60575 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DDD33E28DAFFAD00F60575 /* SceneDelegate.swift */; };
 		71DDD34128DAFFAD00F60575 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DDD34028DAFFAD00F60575 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67A272348649474F18FB3782 /* Pods-SensorRx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SensorRx.debug.xcconfig"; path = "Target Support Files/Pods-SensorRx/Pods-SensorRx.debug.xcconfig"; sourceTree = "<group>"; };
 		71DDD33928DAFFAD00F60575 /* SensorRx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SensorRx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71DDD33C28DAFFAD00F60575 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71DDD33E28DAFFAD00F60575 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		71DDD34528DAFFAF00F60575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71DDD34828DAFFAF00F60575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71DDD34A28DAFFAF00F60575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB3BCCB51E4FA133D85F3000 /* libPods-SensorRx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SensorRx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C56CDC4E88090E137C6CFB0B /* Pods-SensorRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SensorRx.release.xcconfig"; path = "Target Support Files/Pods-SensorRx/Pods-SensorRx.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BF0908BE32773554BDB5120 /* libPods-SensorRx.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				71DDD33B28DAFFAD00F60575 /* SensorRx */,
 				71DDD33A28DAFFAD00F60575 /* Products */,
+				73CECCE7F2CEBC490EEE5E18 /* Pods */,
+				F8D0B900B0A707311340AB30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = SensorRx;
 			sourceTree = "<group>";
 		};
+		73CECCE7F2CEBC490EEE5E18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67A272348649474F18FB3782 /* Pods-SensorRx.debug.xcconfig */,
+				C56CDC4E88090E137C6CFB0B /* Pods-SensorRx.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F8D0B900B0A707311340AB30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB3BCCB51E4FA133D85F3000 /* libPods-SensorRx.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71DDD34D28DAFFAF00F60575 /* Build configuration list for PBXNativeTarget "SensorRx" */;
 			buildPhases = (
+				33FEB7335885C89EC01D333F /* [CP] Check Pods Manifest.lock */,
 				71DDD33528DAFFAD00F60575 /* Sources */,
 				71DDD33628DAFFAD00F60575 /* Frameworks */,
 				71DDD33728DAFFAD00F60575 /* Resources */,
+				D94163C9BBAB312E803A8223 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33FEB7335885C89EC01D333F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SensorRx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D94163C9BBAB312E803A8223 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SensorRx/Pods-SensorRx-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SensorRx/Pods-SensorRx-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SensorRx/Pods-SensorRx-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		71DDD33528DAFFAD00F60575 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		71DDD34E28DAFFAF00F60575 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67A272348649474F18FB3782 /* Pods-SensorRx.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +379,7 @@
 		};
 		71DDD34F28DAFFAF00F60575 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C56CDC4E88090E137C6CFB0B /* Pods-SensorRx.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

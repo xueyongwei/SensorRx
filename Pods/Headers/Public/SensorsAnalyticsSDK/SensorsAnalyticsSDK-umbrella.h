@@ -1,0 +1,1 @@
+../../../Target Support Files/SensorsAnalyticsSDK/SensorsAnalyticsSDK-umbrella.h
